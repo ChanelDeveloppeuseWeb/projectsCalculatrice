@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <title>Project calculator</title>
+  </head>
+  <body>
+    <div class="worspace_container">
+      <div class="worspace_object" id="worspace_object"></div>
+      <div class="result">
+        <p id="worspace_operation"></p>
+        <p id="worspace_result"></p>
+      </div>
+
+    </div>
+    <div class="worspace-contain">
+      <div class="worspace_operateur">
+        <button class="symbole" onclick="calculator('c')">C</button>
+        <button class="symbole" onclick="calculator('/')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M5 11h14v2H5zm7.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zm0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4z"
+              />
+          </svg>
+        </button>
+        <button class="symbole" onclick="calculator('*')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 40 40"
+          >
+            <path
+              fill="currentColor"
+              d="M21.499 19.994L32.755 8.727a1.064 1.064 0 0 0-.001-1.502c-.398-.396-1.099-.398-1.501.002L20 18.494L8.743 7.224c-.4-.395-1.101-.393-1.499.002a1.05 1.05 0 0 0-.309.751c0 .284.11.55.309.747L18.5 19.993L7.245 31.263a1.064 1.064 0 0 0 .003 1.503c.193.191.466.301.748.301h.006c.283-.001.556-.112.745-.305L20 21.495l11.257 11.27c.199.198.465.308.747.308a1.058 1.058 0 0 0 1.061-1.061c0-.283-.11-.55-.31-.747L21.499 19.994z"
+            />
+          </svg>
+        </button>
+        <button class="symbole" onclick="calculator('d')">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="-2 -5 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.828 0H18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7.828a2 2 0 0 1-1.414-.586L.707 7.707a1 1 0 0 1 0-1.414L6.414.586A2 2 0 0 1 7.828 0zm0 12H18V2H7.828l-5 5l5 5zm6.586-5l1.414 1.414a1 1 0 0 1-1.414 1.414L13 8.414l-1.414 1.414a1 1 0 1 1-1.414-1.414L11.586 7l-1.414-1.414a1 1 0 1 1 1.414-1.414L13 5.586l1.414-1.414a1 1 0 1 1 1.414 1.414L14.414 7z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="number_one">
+        <button id="sept"  onclick="calculator(7)">7</button>
+        <button id="huit" onclick="calculator(8)">8</button>
+        <button id="neuf" onclick="calculator(9)">9</button>
+        <button class="symbole" onclick="calculator('-')">-</button>
+        <!-- <div class="item">%</div> -->
+      </div>
+      <div class="number_one">
+        <button id="quatre" onclick="calculator(4)">4</button>
+        <button id="cinq" onclick="calculator(5)">5</button>
+        <button id="six" onclick="calculator(6)">6</button>
+        <button id="button" class="symbole" onclick="calculator('+')">+</button>
+        <!-- <div class="item">0</div> -->
+      </div>
+      <div class="number_one">
+        <button id="un" onclick="calculator(1)">1</button>
+        <button id="deux" onclick="calculator(2)">2</button>
+        <button id="trois" onclick="calculator(3)">3</button>
+        <button class="egale" onclick="calculator('=')">=</button>
+        <!-- <div class="item">,</div> -->
+      </div>
+      <div class="number_one">
+        <button id="pourcentage" onclick="calculator('%')">%</button>
+        <button id="zero" onclick="calculator(0)">0</button>
+        <button id="virgule"onclick="calculator('.')">.</button>
+      </div>
+    </div>
+  </body>
+</html>
