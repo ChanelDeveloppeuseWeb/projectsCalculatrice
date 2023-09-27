@@ -20,18 +20,19 @@ function calculator(value) {
   }
   // code pour afficher uniquement le resultat
   if (value == "=") {
-    document.getElementById("worspace_operation").style.display = "none";
-  } else {
-    document.getElementById("worspace_operation").style.display = "block";
+    document.getElementById("worspace_operation").innerHTML = "";
+  value= "";
+
+  }else{
+ // code pour afficher tous les nombres sur une seule ligne
+ document.getElementById("worspace_operation").innerHTML += value;
+
+ // code pour afficher le resultat
+
+ let result = document.getElementById("worspace_operation");
+
+ document.getElementById("worspace_result").innerHTML =
+   result.innerHTML != "" ? eval(result.innerText) : "";
   }
-
-  // code pour afficher tous les nombres sur une seule ligne
-  document.getElementById("worspace_operation").innerHTML += value;
-
-  // code pour afficher le resultat
-
-  let result = document.getElementById("worspace_operation");
-
-  document.getElementById("worspace_result").innerHTML =
-    result.innerHTML != "" ? eval(result.innerText) : "";
+ 
 }
