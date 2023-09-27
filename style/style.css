@@ -113,9 +113,11 @@ button{
 
 @media  screen and (max-width:767px){
     .worspace_container{
-        width : 70%;
+        width : 80%;
+        margin: auto;
     }
     .worspace-contain{
-        width: 70%;
+        width: 80%;
+        margin: auto;
     }
 }
