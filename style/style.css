@@ -83,6 +83,17 @@ button{
     color:#e7e7e7;
     opacity: 0.7;
     margin-top: 10px;
+    transition: 1;
+    width: 60px;
+    height: 60px;
+}
+button:active{
+    background-color:#fff;
+    color: black;
+    
+}
+svg:active{
+    background-color:#fff;
 }
 .number_two{
     display: flex;
