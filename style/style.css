@@ -112,10 +112,16 @@ button{
 }
 
 @media  screen and (max-width:767px){
+
+    *{
+        overflow: hidden;
+    }
     .worspace_container{
         width : 75%;
+        height: 80%;
     }
     .worspace-contain{
         width: 75%;
+        height: 250px;
     }
 }
